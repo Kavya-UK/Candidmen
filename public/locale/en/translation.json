@@ -1,0 +1,24 @@
+{
+    "HomePage": {
+        
+    "BannerTitleForRent": "RENT",
+    "BannerTitleForWear": "WEAR",
+    "BannerTitleForReturn": "RETURN",
+    "collectionTitle":"Our Collection",
+    "collectionSubTitle":"Do not settle for Ordinary",
+    "trendingTitle":"Trending Collections",
+    "trendingSubTitle":"Do not settle for Ordinary",
+    "buyTitle":"Shirts to Buy",
+    "buySubTitle":"Do not settle for Ordinary",
+    "curatedTitle":"Curated ",
+    "curatedSubTitle":"Do not settle for Ordinary",
+    "showsstopperTitle":"SHOWSTOPPERS ",
+    "showsstopperSubTitle":"Dazzle up for the Best Times",
+    "Featuredbrands":"Featured Brands",
+    "Rent":"Rent",
+    "Wear":"Wear",
+    "Return":"Return",
+    "Our_Happy_Customers":"Our Happy Customers !",
+    "About_us ":"About us "
+  }
+}
