@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CollectionContainer({ collection }) {
   return (
-    <div className="h-full  grid grid-cols-3 gap-2">
+    <div className="h-full  grid grid-cols-3 gap-2 ">
       <div className="">
         <div className={`h-[50%] pb-1`}>{collection.leftTop.product}</div>
         <div className={`h-[50%] p1-1`}>{collection.leftBottom.product}</div>

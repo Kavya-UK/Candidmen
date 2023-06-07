@@ -49,14 +49,14 @@ const OrderSummary = ({
           <div className={`${fontType} text-right`}> {total}</div>
         </div>
         {status !== "In Progress" && (
-        <CustomButton
-          type="secondary"
-          fontSize={"24px"}
-          primaryTextColor="text-black"
-          customStyle="py-[8px] font-Poppins font-normal mt-[40px]"
-        >
-          Cancel Order
-        </CustomButton>
+          <CustomButton
+            type="secondary"
+            fontSize={"20px"}
+            primaryTextColor="text-grayish_color"
+            customStyle="py-[8px] font-Poppins font-normal mt-[40px]"
+          >
+            Cancel Order
+          </CustomButton>
         )}
         <CustomButton
           type="primary"

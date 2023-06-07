@@ -14,37 +14,14 @@ import AddressBar from "./components/common/addressBar";
 import ProductStatus from "./components/common/product-status";
 import InputPhone from "./components/common/inputPhone";
 import OrderSummary from "./components/common/orderSummary";
+import Subscribe from "./components/common/subscribeLetter";
+import Home from "./pages/Home";
 
-const collection = {
-  leftTop: {
-    product: <ProductImage title="Suits & Tuxedo" bgImg={collections.tuxedo} />,
-  },
-  leftBottom: {
-    product: <ProductImage title="Jodhpuri" bgImg={collections.jodhpuri} />,
-  },
-  centerTop: {
-    product: <ProductImage title="Blazer" bgImg={collections.blazer} />,
-  },
-  centerBottom: {
-    product: (
-      <ProductImage title="Accessories" bgImg={collections.accessories} />
-    ),
-  },
-  rightTop: {
-    product: (
-      <ProductImage title="Kurta Pyjama & Bandi " bgImg={collections.kurta} />
-    ),
-  },
-  rightBottom: {
-    product: (
-      <ProductImage title="Sherwani & Indo" bgImg={collections.sherwani} />
-    ),
-  },
-};
 function App() {
   return (
     <div className="App">
-      <div className="h-[450px] ">
+      <Home />
+      {/* <div className="h-[450px] ">
         <HomeBanner />
       </div>
       <div className="h-[100px] w-[420px] mt-20">
@@ -86,7 +63,7 @@ function App() {
           />
         </div>
       </div>
-      <div>{/* <ProductCarousel listItems={productList} /> */}</div>
+      <div></div>
       <div className="h-[450px] w-[90%] mx-auto mt-20">
         <CollectionContainer collection={collection} />
       </div>
@@ -196,7 +173,6 @@ function App() {
           discount=" ₹0"
           walletCash=" ₹0"
           total=" ₹16735"
-         
         />
       </div>
       <div className="mt-[20px]">
@@ -209,9 +185,10 @@ function App() {
           discount=" ₹0"
           walletCash=" ₹0"
           total=" ₹5578"
-          
         />
       </div>
+      <div className="mt-[50px]"><Subscribe/></div> */}
+
     </div>
   );
 }

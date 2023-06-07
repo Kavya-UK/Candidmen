@@ -10,7 +10,7 @@ export default function ProductSummary({
   discount,
 }) {
   return (
-    <div className="h-full p-[5px]">
+    <div className=" h-full p-[5px]">
       <div className="relative h-[80%] ">
         <img
           src={require(`../../${productImg}`)}
