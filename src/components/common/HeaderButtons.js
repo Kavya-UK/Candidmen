@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomButton from "./customButton";
+import CustomButton from "./CustomButton";
 import { BsSearch } from "react-icons/bs";
 import { BsCart } from "react-icons/bs";
 import { BsHeart } from "react-icons/bs";

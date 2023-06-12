@@ -25,6 +25,7 @@ const getReturnValues = (countDown) => {
   );
   let minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((countDown % (1000 * 60)) / 1000);
+  hours = hours * (days || 1);
     hours = hours < 10 ? `0${hours}` : hours;
     minutes = minutes < 10 ? `0${minutes}` : minutes;
     seconds = seconds < 10 ? `0${seconds}` : seconds;

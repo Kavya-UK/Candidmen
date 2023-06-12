@@ -13,6 +13,14 @@ export const collections = {
   sherwani: "assets/home/collections/sherwani.png",
   tuxedo: "assets/home/collections/tuxedo.png",
 };
+export const shopCollections = {
+  accessories: "assets/shop/collections/accessories.png",
+  blazer: "assets/shop/collections/blazer.png",
+  jodhpuri: "assets/shop/collections/jodhpuri.png",
+  indo: "assets/shop/collections/indo.png",
+  ethnic: "assets/shop/collections/ethinic.png",
+  suit: "assets/shop/collections/suit.png",
+};
 export const products = {
   accessories: "assets/home/products/product1.png",
   blazer: "assets/home/products/product2.png",

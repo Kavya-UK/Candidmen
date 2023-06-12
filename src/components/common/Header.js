@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderLinks from "./HeaderLinks";
-import CustomButton from "./customButton";
+import CustomButton from "./CustomButton";
 import { BiChevronDown } from "react-icons/bi";
 import HeaderButtons from "./HeaderButtons";
 
@@ -19,7 +19,7 @@ export default function Header({ selected }) {
       </div>
       <div className="">
         <div className="h-full flex justify-center items-center ">
-          <span className="text-suvaGray pr-[10px]">Banglore</span>
+          <span className="text-suvaGray pr-[10px]">Bangalore</span>
           <CustomButton
             fontSize={"lg:text-[24px]"}
             primaryTextColor={"text-shadeYellow"}

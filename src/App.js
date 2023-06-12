@@ -1,26 +1,32 @@
 import "./App.css";
-import HomeBanner from "./components/common/home-banner";
-import ProductImage from "./components/common/product-image";
+import HomeBanner from "./components/common/HomeBanner";
+import ProductImage from "./components/common/ProductImage";
 import { collections } from "./data/home/imagesLink";
-import CollectionContainer from "./components/common/collection-container";
-import ProductSummary from "./components/common/product-summary";
-import ProductCarousel from "./components/common/productCarousel";
+import CollectionContainer from "./components/home/CollectionContainer";
+import ProductSummary from "./components/common/ProductSummary";
+import ProductCarousel from "./components/common/ProductCarousel";
 import { productList } from "./data/home/products";
-import CustomButton from "./components/common/customButton";
-import InputText from "./components/common/inputText";
+import CustomButton from "./components/common/CustomButton";
+import InputText from "./components/common/InputText";
 import { ReactComponent as ChevronRightIcon } from "./assets/icons/chevronRight.svg";
 import { ReactComponent as FavouriteIcon } from "./assets/icons/favourite.svg";
-import AddressBar from "./components/common/addressBar";
-import ProductStatus from "./components/common/product-status";
-import InputPhone from "./components/common/inputPhone";
-import OrderSummary from "./components/common/orderSummary";
-import Subscribe from "./components/common/subscribeLetter";
+import AddressBar from "./components/common/AddressBar";
+import ProductStatus from "./components/common/ProductStatus";
+import InputPhone from "./components/common/InputPhone";
+import OrderSummary from "./components/common/OrderSummary";
+import Subscribe from "./components/home/SubscribeLetter";
 import Home from "./pages/Home";
+import Shop from "./pages/Shop";
+import ShoppingCart from "./pages/ShoppingCart";
+import ProductListing from "./pages/ProductListing";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      {/* <Home />
+      <Shop/> */}
+      <ProductListing />
+      {/* <ShoppingCart/> */}
       {/* <div className="h-[450px] ">
         <HomeBanner />
       </div>

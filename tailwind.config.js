@@ -19,6 +19,10 @@ module.exports = {
       },
       backgroundImage: {
         returnPolicy: "url('./assets/home/returnPolicy.png')",
+        subscribe: "url('./assets/home/subscribe.png')",
+        shopbanner: "url('./assets/shop/shopbanner.png')",
+        cartimage: "url('./assets/shoppingcart/productimage.png')",
+        saleBg: "url('./assets/shop/bgSale.png')",
       },
       fontFamily: {
         Rufina_Bold: ["Rufina-Bold"],
@@ -47,6 +51,10 @@ module.exports = {
         blueGray: "#130F26",
         lightblueGray: "#130f2680",
         floralWhite: "#FFF9ED",
+        lightshadedgrey: "#091c4280",
+        inputgrey: "#F8F8F8",
+        redtransh: "#C94949",
+        tintYellow: "rgba(250, 187, 75, 0.15)",
       },
       lineHeight: {
         18: "18px",

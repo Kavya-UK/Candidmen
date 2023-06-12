@@ -1,5 +1,4 @@
 import React from 'react'
-import { useTranslation } from "react-i18next";
 
 import { bannerImage } from '../../data/home/imagesLink';
 
@@ -13,7 +12,6 @@ const ImageComponent = ({imgSrc}) => {
     );
 }
 export default function HomeBanner() {
-  const { t } = useTranslation();
   return (
     <div className="h-full py-[10px] flex items-center justify-center">
       <div className="relative left-[8%] z-2 h-[60%]">

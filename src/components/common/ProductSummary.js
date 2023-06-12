@@ -1,5 +1,5 @@
 import React from 'react'
-import './product-summary.css'
+import './ProductSummary.css'
 import { ReactComponent as FavoriteIcon } from "../../assets/icons/favourite.svg";
 export default function ProductSummary({
   productImg,

@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomButton from '../common/customButton';
+import CustomButton from '../common/CustomButton';
 import {BsArrowRightShort} from 'react-icons/bs'
 
 export default function ShowStopper() {

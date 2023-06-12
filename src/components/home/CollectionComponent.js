@@ -1,6 +1,6 @@
 import React from "react";
-import CollectionContainer from "../common/collection-container";
-import CustomButton from "../common/customButton";
+import CollectionContainer from "./CollectionContainer";
+import CustomButton from "../common/CustomButton";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const CollectionComponent = ({title,subTitle, collection }) => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomButton from './customButton';
+import CustomButton from './CustomButton';
 export default function ProductStatus({
   status,
   imgSrc,

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ReactComponent as FiTrashIcon } from "../../assets/icons/fiTrash.svg";
-import CustomButton from './customButton';
+import CustomButton from './CustomButton';
 import { ReactComponent as EditIcon } from "../../assets/icons/edit.svg";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { FiEdit2 } from "react-icons/fi";

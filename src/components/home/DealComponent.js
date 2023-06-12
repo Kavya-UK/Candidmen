@@ -1,6 +1,6 @@
 import React from 'react'
 import CountdownTimer from '../common/Counter';
-import CustomButton from '../common/customButton';
+import CustomButton from '../common/CustomButton';
 import { BsArrowRightShort } from "react-icons/bs";
 
 export default function DealComponent() {

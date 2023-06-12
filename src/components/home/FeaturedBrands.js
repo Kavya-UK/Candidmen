@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomButton from '../common/customButton';
+import CustomButton from '../common/CustomButton';
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export default function FeaturedBrands() {

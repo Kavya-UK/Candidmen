@@ -1,6 +1,6 @@
 import React from "react";
-import ErrorMessage from "./errorMessage"
-import Label from "./labelComponent";
+import ErrorMessage from "./ErrorMessage"
+import Label from "./LabelComponent";
 const InputText = ({ type, placeholder, label, name, errorMessage }) => {
   return (
     <div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/common/Header'
 import { collections } from "../data/home/imagesLink";
-import ProductImage from "../components/common/product-image";
+import ProductImage from "../components/common/ProductImage";
 import HomeBannerComponent from "../components/home/HomeBannerComponent.js";
 import CollectionComponent from '../components/home/CollectionComponent';
 import DealComponent from "../components/home/DealComponent.js";
@@ -10,7 +10,11 @@ import HomeCarouselComponent from '../components/home/HomeCarouselComponent';
 import ShowStopper from "../components/home/ShowStopper";
 import FeaturedBrands from '../components/home/FeaturedBrands';
 import RentalPolicy from '../components/home/RentalPolicy';
-import CustomerFeedback from "../components/home/customerFeedback";
+import CustomerFeedback from "../components/home/CustomerFeedback";
+import { feedbackList } from '../data/home/customerFeedback';
+import AboutUs from '../components/home/AboutUs';
+import FeedbackCarousel from '../components/common/CustomerFeedbackCarousel';
+import Footer from '../components/common/Footer';
 
 const collection = {
   leftTop: {
@@ -38,6 +42,7 @@ const collection = {
     ),
   },
 };
+  
 export default function Home() {
   return (
     <div>
@@ -86,7 +91,17 @@ export default function Home() {
         <RentalPolicy />
       </div>
       <div className="mt-[50px]">
-        <CustomerFeedback />
+        {/* <CustomerFeedback
+          title={"Our Happy Customers !"}
+          feedbackList={feedbackList}
+        /> */}
+        <FeedbackCarousel feedbackList={feedbackList}  />
+      </div>
+      <div className="mt-[150px]">
+        <AboutUs />
+      </div>
+      <div className="mt-[80px]">
+        <Footer />
       </div>
     </div>
   );

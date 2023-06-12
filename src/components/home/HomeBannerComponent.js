@@ -1,6 +1,6 @@
 import React from 'react'
-import HomeBanner from '../common/home-banner';
-import CustomButton from "../common/customButton";
+import HomeBanner from '../common/HomeBanner';
+import CustomButton from "../common/CustomButton";
 import {BsArrowRightShort} from 'react-icons/bs'
 
 export default function HomeBannerComponent() {

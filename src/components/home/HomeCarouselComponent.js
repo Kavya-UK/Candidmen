@@ -1,7 +1,7 @@
 import React from 'react'
 
-import ProductCarousel from "../common/productCarousel";
-import CustomButton from "../common/customButton";
+import ProductCarousel from "../common/ProductCarousel";
+import CustomButton from "../common/CustomButton";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export default function HomeCarouselComponent({title,subTitle, productList }) {

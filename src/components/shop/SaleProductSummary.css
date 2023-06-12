@@ -1,0 +1,33 @@
+aside:before,
+aside:after {
+    height: 0;
+    width: 0;
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 0;
+}
+
+aside {
+    padding: 5px 8px;
+    line-height: 14px;
+    position: relative;
+}
+
+aside.ribbon3 {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    background: #FABB4B;
+}
+
+aside.ribbon3:before {
+    border-width: 11px 0 13px 13px;
+}
+
+aside.ribbon3:before {
+    border-color: #FABB4B transparent;
+    left: -13px;
+    top: 0
+}
+

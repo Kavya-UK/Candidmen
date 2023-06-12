@@ -1,6 +1,6 @@
 import React from 'react'
-import Label from './labelComponent';
-import ErrorMessage from './errorMessage';
+import Label from './LabelComponent';
+import ErrorMessage from './ErrorMessage';
 
 const InputPhone = ({
   placeholder,
