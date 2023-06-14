@@ -20,10 +20,10 @@ export default function ProductDetails() {
           <ProductShowCase imageList={imageList} />
         </div>
         <div className="col-span-8 mx-auto">
-          <h2 className="inline-block text-nero not-italic font-normal text-4xl leading-[44px] pb-[10px] border-b-[1px] border-shadeYellow">
+          <h2 className="inline-block text-nero not-italic font-normal text-4xl leading-[44px] pb-[10px] border-b-[1px] border-shadeYellow font-Rufina_Regular">
             Grey Embroidered All Over Suit
           </h2>
-          <p className="text-BlueCharcoal not-italic font-light text-base leading-6">
+          <p className="text-BlueCharcoal not-italic font-light text-base leading-6 font-Poppins">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna nonummy nibh
             euismod tincidunt
@@ -45,7 +45,7 @@ export default function ProductDetails() {
               <FiStar color="#CDCDCD" />
             </span>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center font-Poppins">
             <span className="inline-block not-italic font-normal text-2xl leading-9 line-through text-nero pr-[10px]">
               ₹27890
             </span>
@@ -63,7 +63,7 @@ export default function ProductDetails() {
             </span>
           </div>
           <div>
-            <span className="not-italic font-normal text-base leading-6 text-nero">
+            <span className="not-italic font-normal text-base leading-6 text-nero font-Poppins">
               Product ID:
             </span>
             <span className="not-italic font-medium text-base leading-6 text-darekBlue pl-[10px]">
@@ -73,7 +73,7 @@ export default function ProductDetails() {
               <span>Shoulder Size</span>
             </div>
           </div>
-          <div className="grid grid-cols-6 mt-[20px] pl-[10px] not-italic font-normal text-[12px] leading-[18px] text-darkestgray">
+          <div className="grid grid-cols-6 mt-[20px] pl-[10px] not-italic font-normal text-[12px] leading-[18px] text-darkestgray font-Poppins">
             <div className="border-b-2 border-r-2 border-solid border-[#EDEDED] bg-[#FCFCFC] h-[50px] pl-[10px] flex items-center ">
               Size
             </div>
@@ -92,10 +92,10 @@ export default function ProductDetails() {
             <div className="border-b-2  border-solid border-[#EDEDED] bg-[#FCFCFC] h-[50px] pl-[10px]  flex items-center">
               XXL
             </div>
-            <div className="border-b-2 border-r-2 border-solid border-[#EDEDED] bg-[#FCFCFC] h-[50px] pl-[10px]  flex items-center">
+            <div className="border-b-2 border-r-2 border-solid border-[#EDEDED] bg-[#FCFCFC] h-[50px] pl-[10px]  flex items-center ">
               Shoulder Size
             </div>
-            <div className="border-b-2 border-r-2 border-solid border-[#EDEDED] bg-[#FCFCFC] h-[50px] pl-[10px]  flex items-center">
+            <div className="border-b-2 border-r-2 border-solid border-[#EDEDED] bg-[#FCFCFC] h-[50px] pl-[10px]  flex items-center ">
               38
             </div>
             <div className="border-b-2 border-r-2 border-solid border-[#EDEDED] bg-[#FCFCFC] h-[50px] pl-[10px]  flex items-center">
@@ -132,17 +132,17 @@ export default function ProductDetails() {
             </div>
           </div>
           <div className="mt-[20px]">
-            <span className="not-italic font-normal text-base leading-6 text-nero mr-[10px]">
+            <span className="not-italic font-normal text-base leading-6 text-nero mr-[10px] font-Poppins">
               Duration :
             </span>
-            <select className="px-[20px] py-[5px] bg-[#EDEDED]">
+            <select className="px-[20px] py-[5px] bg-[#EDEDED] font-Poppins">
               <option>1 Day</option>
               <option>2 Days</option>
               <option>3 Days</option>
             </select>
           </div>
           <div className="mt-[20px]">
-            <span className="not-italic font-normal text-base leading-6 text-nero mr-[10px]">
+            <span className="not-italic font-normal text-base leading-6 text-nero mr-[10px] font-Poppins">
               Delivery Date :
             </span>
             <input
@@ -152,7 +152,7 @@ export default function ProductDetails() {
               value="2023-01-08"
               className="p-[5px] bg-[#EDEDED]"
             />
-            <span className="not-italic font-normal text-base leading-6 text-nero ml-[10px]  ">
+            <span className="not-italic font-normal text-base leading-6 text-nero ml-[10px] font-Poppins ">
               Return Date :
             </span>
             <input
@@ -168,7 +168,7 @@ export default function ProductDetails() {
               <CustomButton
                 fontSize={"text-4xl"}
                 customStyle={
-                  "not-italic font-semibold leading-[30px] text-white leading-[54px] px-[12px] sm:px-0 py-[8px] sm:py-[12px] w-[100px]"
+                  "not-italic font-Poppins font-semibold leading-[30px] text-white leading-[54px] px-[12px] sm:px-0 py-[8px] sm:py-[12px] w-[100px]"
                 }
                 type="primary"
                 primaryBgColor={"bg-shadeYellow"}

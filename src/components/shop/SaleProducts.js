@@ -25,18 +25,20 @@ export default function SaleProductSummary({
         </aside>
       </div>
       <div>
-        <h3 className="text-[13px] font-normal font-Rufina_Regular">{title}</h3>
+        <h3 className="not-italic font-normal text-base leading-5 font-Rufina_Regular text-darekBlue">
+          {title}
+        </h3>
         <p className="flex justify-between px-[10px]">
           <span
             className={
               " " + isRent
-                ? " line-through font-medium font-Poppins text-[13px]"
+                ? " line-through not-italic font-normal text-xl leading-[30px] text-nero font-Poppins"
                 : "font-medium text-[13px]"
             }
           >{`₹${price}`}</span>
           {isRent && (
             <>
-              <span className=" text-[13px] font-medium font-Poppins">{`Rent ₹${rentPrice}`}</span>
+              <span className="not-italic font-medium text-xl leading-[30px] text-darekBlue font-Poppins">{`Rent- ₹${rentPrice}`}</span>
             </>
           )}
         </p>

@@ -18,13 +18,13 @@ export default function Banner() {
         </div>
         <div className="col-span-1 h-full">
           <div className=" flex flex-col justify-center items-center h-full">
-            <h2 className="not-italic font-normal text-2xl leading-[27px] text-black mb-[40px]">
+            <h2 className="not-italic font-Spartan font-normal text-2xl leading-[27px] text-black mb-[40px]">
               Newly In
             </h2>
-            <h1 className="not-italic font-normal text-[64px] leading-[64px] text-black mb-[25px]">
+            <h1 className="not-italic font-normal text-[64px] leading-[64px] text-black mb-[25px] font-SeoulHangang">
               UNLOCK YOUR STYLE
             </h1>
-            <h2 className=" not-italic font-normal text-2xl leading-[27px] text-black">
+            <h2 className=" font-Spartan not-italic font-normal text-2xl leading-[27px] text-black">
               with our newly arrived collection
             </h2>
           </div>

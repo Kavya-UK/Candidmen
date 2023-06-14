@@ -5,11 +5,6 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 export default function AboutUs() {
   return (
     <div className="h-[400px] w-full">
-      <div>
-        <h1 className="not-italic font-normal text-4xl leading-[44px] text-black text-center">
-          About Us
-        </h1>
-      </div>
       <div className="grid grid-cols-8 gap-5 mt-[40px] px-[50px]">
         <div className="col-span-6">
           <span className="not-italic font-normal text-2xl leading-9 text-[rgba(0,0,0,0.5)]">

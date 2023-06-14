@@ -2,7 +2,7 @@ import { useCountdown } from "./CountDownHook";
 
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
-<div className="not-italic font-normal text-2xl lg:text-4xl leading-[51px] text-black">
+    <div className="not-italic font-normal font-PortLligatSans text-2xl lg:text-4xl leading-[51px] text-black">
       <span className="bg-white  px-[8px] rounded-[10px]">
         {`${hours}`.split("")[0]}
       </span>

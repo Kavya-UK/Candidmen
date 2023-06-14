@@ -8,10 +8,10 @@ export default function HomeBannerComponent() {
     <div>
       <div className="flex flex-col justify-center w-[100%] lg:w-[80%] px-10 lg:px-0 mx-auto">
         <div className="flex justify-center not-italic font-normal text-[30px] sm:text-[54px] lg:text-[64px] leading-[87px] text-black ">
-          <h2>WEAR</h2>
+          <h2 className="font-Prata">WEAR</h2>
         </div>
         <div className="flex justify-between not-italic font-normal text-[30px] sm:text-[54px] lg:text-[64px] leading-[87px] text-black">
-          <h2>
+          <h2 className="font-Prata">
             RENT
             <img
               className="relative w-[60%] -top-[15px] -left-[25px] sm:top-0 sm:w-[80%] "
@@ -19,7 +19,7 @@ export default function HomeBannerComponent() {
               alt="rent"
             />
           </h2>
-          <h2>RETURN</h2>
+          <h2 className="font-Prata">RETURN</h2>
         </div>
       </div>
       <HomeBanner />

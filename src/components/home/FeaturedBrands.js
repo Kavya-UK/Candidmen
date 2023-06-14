@@ -5,7 +5,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 export default function FeaturedBrands() {
   return (
     <div>
-      <h2 className="text-center not-italic font-bold text-2xl lg:text-4xl leading-[44px]">
+      <h2 className="text-center font-Rufina_Regular not-italic font-bold text-2xl lg:text-4xl leading-[44px]">
         Featured Brands
       </h2>
       <div className="flex justify-around mt-[50px]">

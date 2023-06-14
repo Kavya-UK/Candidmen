@@ -10,7 +10,7 @@ export default function SaleDisplay({ productList, title, isLink, imgSize, imgSr
         <div
           className={`${isLink ? "col-span-3 " : "col-span-10 "}  py-[20px]`}
         >
-          <h3 className="not-italic font-bold text-4xl leading-[44px] text-black;">
+          <h3 className="not-italic font-bold text-4xl leading-[44px] text-black font-Rufina_Regular">
             {title}
           </h3>
         </div>

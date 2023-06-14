@@ -126,7 +126,7 @@ export default function ProductListing() {
           <Filter filterList={filterList} setFilterList={setFilterList} />
         </div>
         <div className="col-span-10 mx-auto">
-          <h2 className="font-normal text-4xl leading-[44px] text-black mb-[20px]">
+          <h2 className="font-normal text-4xl leading-[44px] text-black mb-[20px] font-Rufina_Regular">
             Suits & Tuxedo
           </h2>
           <div className="grid grid-cols-3 gap-10">

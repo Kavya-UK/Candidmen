@@ -17,7 +17,7 @@ export default function ProductSummary({
           alt="product-img"
           className="w-full h-full object-cover absolute"
         />
-        <p className={`absolute right-0 ${discount ? 'block' : 'hidden'}`}>
+        <p className={`absolute right-0 ${discount ? "block" : "hidden"}`}>
           <aside class="ribbon3">{`${discount}% off`}</aside>
         </p>
         <aside className="absolute right-2 bottom-2 w-[35px] h-[35px] bg-white rounded-[50%] flex justify-center items-center">
@@ -25,18 +25,20 @@ export default function ProductSummary({
         </aside>
       </div>
       <div>
-        <h3 className="text-[16px] font-normal font-Rufina_Regular">{title}</h3>
+        <h3 className="not-italic font-normal text-[18px] leading-[25px] font-Rufina_Regular text-nero">
+          {title}
+        </h3>
         <p className="flex justify-between px-[10px]">
           <span
             className={
               " " + isRent
-                ? " line-through font-medium font-Poppins"
+                ? " line-through not-italic font-normal text-[18px] leading-9 font-Poppins text-nero"
                 : "font-medium"
             }
           >{`₹${price}`}</span>
           {isRent && (
             <>
-              <span className="font-medium font-Poppins">{`Rent ₹${rentPrice}`}</span>
+              <span className="not-italic font-medium text-[18px] leading-9 font-Poppins text-darekBlue">{`Rent - ₹${rentPrice}`}</span>
             </>
           )}
         </p>

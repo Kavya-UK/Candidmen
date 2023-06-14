@@ -13,7 +13,7 @@ import RentalPolicy from '../components/home/RentalPolicy';
 import CustomerFeedback from "../components/home/CustomerFeedback";
 import { feedbackList } from '../data/home/customerFeedback';
 import AboutUs from '../components/home/AboutUs';
-import FeedbackCarousel from '../components/common/CustomerFeedbackCarousel';
+import CustomerFeedbackCarousel from "../components/common/CustomerFeedbackCarousel";
 import Footer from '../components/common/Footer';
 
 const collection = {
@@ -91,13 +91,16 @@ export default function Home() {
         <RentalPolicy />
       </div>
       <div className="mt-[50px]">
-        {/* <CustomerFeedback
-          title={"Our Happy Customers !"}
-          feedbackList={feedbackList}
-        /> */}
-        <FeedbackCarousel feedbackList={feedbackList}  />
+        <h2 className=" not-italic font-bold text-4xl leading-[44px] text-black font-Rufina_Regular text-center">
+          Our Happy Customers !
+        </h2>
+
+        <CustomerFeedbackCarousel feedbackList={feedbackList} />
       </div>
       <div className="mt-[150px]">
+        <h2 className="not-italic font-normal text-4xl leading-[44px] text-black text-center font-Rufina_Regular">
+          About Us
+        </h2>
         <AboutUs />
       </div>
       <div className="mt-[80px]">

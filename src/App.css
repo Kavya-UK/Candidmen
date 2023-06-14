@@ -7,3 +7,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-image: url(./assets/icons/fi_calendar.svg);
   cursor: pointer;
 }
+
+*{
+  font-family: 'Poppins';
+}

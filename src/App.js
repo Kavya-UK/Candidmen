@@ -24,8 +24,8 @@ import ProductDescription from "./pages/ProductDescription";
 function App() {
   return (
     <div className="App">
-      <Home />
-      <Shop/> 
+      <Home /> 
+       <Shop/> 
        <ProductListing />
       <ProductDescription/>
       <ShoppingCart/>

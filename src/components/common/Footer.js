@@ -15,18 +15,18 @@ export default function Footer() {
       <div className="bg-red-300 w-full">
         <Subscribe />
       </div>
-      <div className="grid grid-cols-12">
+      <div className="grid grid-cols-12 mt-[30px]">
         <div className="col-span-4">
           <img
             src={require("../../assets/header/user.png")}
             alt=""
             className="rounded-[50%] w-[40px] inline-block"
           />
-          <span className="pl-[10px] text-white not-italic font-medium text-xl lg:text-2xl leading-9">
+          <span className="pl-[10px] text-white not-italic font-medium text-xl lg:text-2xl leading-9 font-Inter">
             Candidmen
           </span>
 
-          <p className="not-italic font-normal text-lg leading-[22px] text-white mt-[20px]">
+          <p className="not-italic font-Inter font-normal text-lg leading-[22px] text-white mt-[20px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare
             cursus sed nunc eget dictum Sed ornare cursus sed nunc eget dictumd
             nunc eget dictum Sed ornare cursus sed nunc eget dictum{" "}
@@ -47,8 +47,8 @@ export default function Footer() {
           </div>
 
           <div className="inline-block">
-            <div className="h-full flex justify-center items-center px-[20px] py-[20px]">
-              <span className="text-suvaGray not-italic font-normal text-base leading-6 ml-[6px]">
+            <div className="h-full flex justify-center items-center px-[10px] py-[10px]">
+              <span className="text-suvaGray not-italic font-normal text-base leading-6">
                 Banglore
               </span>
               <span className="">
@@ -71,13 +71,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="col-span-2 pl-[40px]">
+        <div className="col-span-2 pl-[40px] ">
           <FooterInfo title="Information" links={InformationLink} />
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 ">
           <FooterInfo title="Policies" links={PoliciesLink} />
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 ">
           <FooterInfo title="Partners" links={PartnersLink} />
         </div>
       </div>

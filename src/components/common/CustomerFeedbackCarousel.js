@@ -72,7 +72,6 @@ const FeedbackCarousel = ({ feedbackList }) => {
               <div className="w-full">
                 <CustomerFeedback
                   image={el.image}
-                  title={el.title}
                   name={el.name}
                   description={el.description}
                 />

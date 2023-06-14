@@ -10,11 +10,6 @@ export default function CustomerFeedback({
 }) {
   return (
     <div className="  ">
-      <div className="text-center">
-        <h1 className="not-italic font-bold text-4xl leading-[44px] text-black w-full">
-          {title}
-        </h1>
-      </div>
       <div className="grid grid-cols-3  mt-[40px]">
         <div className="col-span-1">
           <div className=" bg-shadeYellow rounded-[50%] h-[150px] w-[150px] ">

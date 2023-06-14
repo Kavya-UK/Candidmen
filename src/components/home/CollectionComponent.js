@@ -6,7 +6,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 const CollectionComponent = ({title,subTitle, collection }) => {
   return (
     <div className="">
-      <h2 className="not-italic font-bold text-[24px] sm:text-[30px]  lg:text-[36px] leading-[44px] text-black  text-center">
+      <h2 className="not-italic font-bold text-[24px] sm:text-[30px] font-Rufina_Regular lg:text-[36px] leading-[44px] text-black  text-center">
         {title}
       </h2>
       <h4 className="not-italic font-light text-[16px] sm:text-[20px] lg:text-[26px] leading-[39px] text-center text-black my-[20px]">

@@ -25,9 +25,17 @@ module.exports = {
         saleBg: "url('./assets/shop/bgSale.png')",
       },
       fontFamily: {
+        SeoulHangang: ["SeoulHangang"],
         Rufina_Bold: ["Rufina-Bold"],
-        Rufina_Regular: ["Rufina-Regular"],
+        Rufina_Regular: ["Rufina"],
         Poppins: ["Poppins"],
+        Prata: ["Prata"],
+        PortLligatSans:['Port Lligat Sans'],
+        Cardo:['Cardo'],
+        Candara:['Candara'],
+        Inter:['Inter'],
+        Spartan:['Spartan'],
+        Shippori:['Shippori Mincho B1']
       },
       colors: {
         shadeYellow: "#FABB4B",

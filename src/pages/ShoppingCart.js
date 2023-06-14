@@ -16,11 +16,11 @@ export default function ShoppingCart() {
           <div className="border-light_graycolor border-b-[1px] px-[20px] py-[20px] flex items-center justify-between">
             <div className="flex items-center">
               <MdKeyboardArrowLeft className="inline-block text-[30px]  mt-[6px]" />
-              <h1 className="not-italic inline-block font-normal text-4xl leading-[44px] text-nero ">
+              <h1 className="not-italic inline-block font-normal text-4xl leading-[44px] text-nero font-Rufina_Regular ">
                 Shopping Cart
               </h1>
             </div>
-            <h3 className="not-italic font-normal text-2xl leading-[30px] text-nero inline-block float-right">
+            <h3 className="not-italic font-normal text-2xl leading-[30px] text-nero inline-block float-right font-Rufina_Regular">
               3 Items
             </h3>
           </div>

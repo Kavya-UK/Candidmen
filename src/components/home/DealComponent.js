@@ -11,7 +11,7 @@ export default function DealComponent() {
   return (
     <div className="grid grid-cols-7 h-[300px] bg-shadeYellow p-[20px]">
       <div className="h-[180px] col-span-7 tablet:col-span-3 pr-5 relative">
-        <h2 className="not-italic font-normal text-xl sm:text-3xl lg:text-5xl leading-[65px] text-black lg:mb-[30px]">
+        <h2 className="not-italic font-Prata font-normal text-xl sm:text-3xl lg:text-5xl leading-[65px] text-black lg:mb-[30px]">
           Deal of the Day
         </h2>
         <CountdownTimer targetDate={dateTimeAfterThreeDays} />
