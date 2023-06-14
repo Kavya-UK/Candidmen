@@ -55,6 +55,9 @@ module.exports = {
         inputgrey: "#F8F8F8",
         redtransh: "#C94949",
         tintYellow: "rgba(250, 187, 75, 0.15)",
+        nero: "#1E1E1E",
+        BlueCharcoal: "#212427",
+        darkestgray: "#222222",
       },
       lineHeight: {
         18: "18px",

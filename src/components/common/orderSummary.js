@@ -16,7 +16,7 @@ const OrderSummary = ({
   const fontType = 
   status === "Completed" ? `text-black` : "text-white";
   return (
-    <div className={`${statusBar} rounded-[8px] p-[15px] h-[550px] w-[250px]`}>
+    <div className={`${statusBar} rounded-[8px] p-[15px] h-[550px] w-full`}>
       <div className={""}>
         <h1
           className={`${fontType} text-[24px] font-Poppins not-italic font-normal leading-36  pb-[15px] border-b-2 border-light_graycolor}`}
@@ -48,6 +48,14 @@ const OrderSummary = ({
           <div className={`${fontType} text-left`}>Total</div>
           <div className={`${fontType} text-right`}> {total}</div>
         </div>
+        <CustomButton
+          type="primary"
+          fontSize={"24px"}
+          primaryTextColor="text-white"
+          customStyle="py-[8px] font-Poppins font-normal mt-[40px]"
+        >
+          Checkout
+        </CustomButton>
         {status !== "In Progress" && (
           <CustomButton
             type="secondary"
@@ -58,14 +66,6 @@ const OrderSummary = ({
             Cancel Order
           </CustomButton>
         )}
-        <CustomButton
-          type="primary"
-          fontSize={"24px"}
-          primaryTextColor="text-white"
-          customStyle="py-[8px] font-Poppins font-normal mt-[40px]"
-        >
-          Checkout
-        </CustomButton>
 
         <div
           className={`${fontType} text-[12px] font-Poppins font-normal leading-18 mt-[15px] not-italic`}

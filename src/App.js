@@ -19,14 +19,16 @@ import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import ShoppingCart from "./pages/ShoppingCart";
 import ProductListing from "./pages/ProductListing";
+import ProductDescription from "./pages/ProductDescription";
 
 function App() {
   return (
     <div className="App">
-      {/* <Home />
-      <Shop/> */}
-      <ProductListing />
-      {/* <ShoppingCart/> */}
+      <Home />
+      <Shop/> 
+       <ProductListing />
+      <ProductDescription/>
+      <ShoppingCart/>
       {/* <div className="h-[450px] ">
         <HomeBanner />
       </div>

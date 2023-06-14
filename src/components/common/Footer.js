@@ -12,7 +12,7 @@ export default function Footer() {
   const PartnersLink=["Venue Partner","Co-Work Space"]
   return (
     <div className="h-[449px] pt-[90px] pb-[20px] pl-[70px] bg-darekBlue relative">
-      <div>
+      <div className="bg-red-300 w-full">
         <Subscribe />
       </div>
       <div className="grid grid-cols-12">

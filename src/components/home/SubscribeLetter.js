@@ -4,7 +4,7 @@ import {FiSend} from "react-icons/fi"
 
 const Subscribe = () => {
   return (
-    <div className="w-[80%] rounded-[20px] h-[170px] bg-subscribe bg-no-repeat bg-[length:100%_100%] mx-auto px-[30px] py-[30px] grid grid-cols-2 absolute -top-[90px]">
+    <div className="w-[80%] rounded-[20px] h-[170px] bg-subscribe bg-no-repeat bg-[length:100%_100%] mx-auto px-[30px] py-[30px] grid grid-cols-2 absolute -top-[90px] left-[10%]">
       <div className="col-span-1">
         <h2 className="not-italic font-normal text-xl leading-[30px] text-white">
           Stay in touch

@@ -17,7 +17,7 @@ export default function ProductSummary({
           alt="product-img"
           className="w-full h-full object-cover absolute"
         />
-        <p className="absolute right-0 ">
+        <p className={`absolute right-0 ${discount ? 'block' : 'hidden'}`}>
           <aside class="ribbon3">{`${discount}% off`}</aside>
         </p>
         <aside className="absolute right-2 bottom-2 w-[35px] h-[35px] bg-white rounded-[50%] flex justify-center items-center">

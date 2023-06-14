@@ -1,0 +1,25 @@
+.box {
+  transition: height 0.5s ease-in, opacity 0.6s ease-in;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  height: 30px;
+}
+
+.hide {
+  
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: height 0.5s ease-in, opacity 1.5s ease-in;
+}
+.undo-icon {
+    display: inline-block;
+    visibility: visible;
+    transition: .4s;
+}
+.faded { 
+    visibility: hidden;
+    opacity: 0;
+    transform: rotateZ(-780deg);
+}
