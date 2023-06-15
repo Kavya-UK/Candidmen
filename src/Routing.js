@@ -9,20 +9,16 @@ import ShoppingCart from "./pages/ShoppingCart";
 
 const Routing=()=>{
   return (
-    <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/home" element={<Home />} />
-        <Route exact path="/shop" element={<Shop />} />
-        <Route exact path="/productlisting" element={<ProductListing />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/productlisting" element={<ProductListing />} />
         <Route
-          exact
-          path="/productdescription"
+                    path="/productdescription"
           element={<ProductDescription />}
         />
-        <Route exact path="/shoppingcart" element={<ShoppingCart />} />
+        <Route path="/shoppingcart" element={<ShoppingCart />} />
       </Routes>
-    </BrowserRouter>
   );
 }
 export default Routing;

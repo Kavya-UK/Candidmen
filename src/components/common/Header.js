@@ -11,7 +11,7 @@ export default function Header({ selected }) {
 
   return (
     <div className=" bg-white sm:flex py-[20px] px-[30px] drop-shadow-header justify-between hidden ">
-      <div className="flex justify-center items-center" onClick={()=>navigate('/home')}>
+      <div className="flex justify-center items-center" onClick={()=>navigate('/')}>
         <img
           src={require("../../assets/header/user.png")}
           alt=""
