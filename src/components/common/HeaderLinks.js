@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function HeaderLinks({ selected }) {
   return (
@@ -10,7 +11,7 @@ export default function HeaderLinks({ selected }) {
             : ""
         }`}
       >
-        Home
+        <Link to="/home">Home</Link>
       </li>
       <li
         className={`${
@@ -19,7 +20,7 @@ export default function HeaderLinks({ selected }) {
             : ""
         }`}
       >
-        Shop
+        <Link to="/shop">Shop</Link>
       </li>
       <li
         className={`${

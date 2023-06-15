@@ -138,6 +138,7 @@ export default function ProductListing() {
                   price={el.price}
                   isRent={el.isRent}
                   rentPrice={el.rentPrice}
+                  link={el.link}
                 />
               </div>
             ))}

@@ -3,11 +3,15 @@ import HeaderLinks from "./HeaderLinks";
 import CustomButton from "./CustomButton";
 import { BiChevronDown } from "react-icons/bi";
 import HeaderButtons from "./HeaderButtons";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Header({ selected }) {
+      const navigate = useNavigate();
+
   return (
     <div className=" bg-white sm:flex py-[20px] px-[30px] drop-shadow-header justify-between hidden ">
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center" onClick={()=>navigate('/home')}>
         <img
           src={require("../../assets/header/user.png")}
           alt=""

@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function CollectionContainer({ collection }) {
+      const navigate = useNavigate();
+
   return (
     <div className="h-full  grid grid-cols-3 gap-2 ">
       <div className="">
-        <div className={`h-[50%] pb-1`}>{collection.leftTop.product}</div>
+        <div className={`h-[50%] pb-1`} onClick={()=>navigate("/productlisting")}>{collection.leftTop.product}</div>
         <div className={`h-[50%] p1-1`}>{collection.leftBottom.product}</div>
       </div>
       <div className="">

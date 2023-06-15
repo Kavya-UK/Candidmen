@@ -4,10 +4,13 @@ import { FiPlus, FiStar } from 'react-icons/fi';
 import { BsStarFill } from 'react-icons/bs';
 import ProductShowCase from './ProductShowCase';
 const imageList = [
-  "assets/product/product1.png",
-  "assets/product/product2.png",
-  "assets/product/product3.png",
-  "assets/product/product4.png",
+  // "assets/product/product1.png",
+  // "assets/product/product2.png",
+  // "assets/product/product3.png",
+  // "assets/product/product4.png",
+  "assets/product/product10.png",
+  "assets/product/product11.png",
+  "assets/product/product12.png",
   "assets/product/product5.png",
   "assets/product/product6.png",
   "assets/product/product7.png",

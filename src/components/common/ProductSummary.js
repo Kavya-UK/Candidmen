@@ -1,6 +1,7 @@
 import React from 'react'
 import './ProductSummary.css'
 import { ReactComponent as FavoriteIcon } from "../../assets/icons/favourite.svg";
+import { useNavigate } from "react-router-dom";
 export default function ProductSummary({
   productImg,
   title,
@@ -8,9 +9,11 @@ export default function ProductSummary({
   isRent,
   rentPrice,
   discount,
+  link
 }) {
+  const navigate = useNavigate();
   return (
-    <div className=" h-full p-[5px]">
+    <div className=" h-full p-[5px]" onClick={link ? ()=> navigate(link) : ()=> {}}>
       <div className="relative h-[80%] ">
         <img
           src={require(`../../${productImg}`)}

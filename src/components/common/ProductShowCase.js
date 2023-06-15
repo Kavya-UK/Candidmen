@@ -1,10 +1,9 @@
 import React, { useRef, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import useWindowWidth from "../../hooks/useWindowWidth.js";
-import ProductSummary from "./ProductSummary.js";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { ReactComponent as CarouselIcons } from "../../assets/icons/carouselIcon2.svg";
+import { ReactComponent as ArrowLeftCircle } from "../../assets/icons/ArrowLeftCircle.svg";
+import { ReactComponent as ArrowRightCircle } from "../../assets/icons/ArrowRightCircle.svg";
+
 
 const responsive = {
   superLargeDesktop: {
@@ -62,56 +61,61 @@ const ProductShowCase = ({
   return (
     <div className={`flex flex-col`}>
       <div className="h-[400px] w-full relative flex justify-center">
-        <img src={require(`../../${currentImage}`)} alt="imageList" />
+        <img
+          className="h-full w-full object-contain"
+          src={require(`../../${currentImage}`)}
+          alt="imageList"
+        />
       </div>
       <div className="w-full grid grid-cols-12 items-center px-[5px] sm:px-0 mx-auto">
-        <button
-          onClick={() => handleCarousel("previous")}
-          className={`col-span-1  justify-self-end md:justify-self-start  flex items-center justify-center `}
-        >
-          <BsChevronLeft
-            color={isFirstSlide ? "#130f2680" : "#130F26"}
-            height={15}
-            width={15}
-          />
-        </button>
-        <div className={`col-span-10`}>
-          <Carousel
-            className=" space-x-[30px] xl:space-x-[48px]"
-            ref={ref}
-            arrows={false}
-            renderButtonGroupOutside={true}
-            responsive={responsive}
+        <div className="col-start-2  col-span-10 grid grid-cols-12">
+          <button
+            onClick={() => handleCarousel("previous")}
+            className={`col-span-1  justify-self-end md:justify-self-start  flex items-center justify-center `}
           >
-            {imageList.map((imgSrc, idx) => (
-              <div
-                className={`${
-                  currentIndex === idx
-                    ? "border-2 border-solid border-shadeYellow "
-                    : " "
-                } h-[100px] w-[100px] mt-[20px] mx-[2px] flex justify-center`}
-              >
-                {/* <div className="h-full "> */}
-                <img
-                  className="absolute h-full w-full object-contain"
-                  src={require(`../../${imgSrc}`)}
-                  alt="show-case"
-                />
-                {/* </div> */}
-              </div>
-            ))}
-          </Carousel>
+            <ArrowLeftCircle
+              color={isFirstSlide ? "#130f2680" : "#130F26"}
+              height={25}
+              width={25}
+            />
+          </button>
+          <div className={`col-span-10`}>
+            <Carousel
+              ref={ref}
+              arrows={false}
+              renderButtonGroupOutside={true}
+              responsive={responsive}
+            >
+              {imageList.map((imgSrc, idx) => (
+                <div
+                  className={`${
+                    currentIndex === idx
+                      ? "border-2 border-solid border-shadeYellow "
+                      : " "
+                  } h-[100px] w-[100px] mt-[20px] mx-[2px] flex justify-center`}
+                >
+                  {/* <div className="h-full "> */}
+                  <img
+                    className="absolute h-full w-full object-contain"
+                    src={require(`../../${imgSrc}`)}
+                    alt="show-case"
+                  />
+                  {/* </div> */}
+                </div>
+              ))}
+            </Carousel>
+          </div>
+          <button
+            onClick={() => handleCarousel("next")}
+            className="col-span-1 justify-self-start md:justify-self-end flex items-center justify-center"
+          >
+            <ArrowRightCircle
+              color={isLastSlide ? "#130f2680" : "#130F26"}
+              height={25}
+              width={25}
+            />
+          </button>
         </div>
-        <button
-          onClick={() => handleCarousel("next")}
-          className="col-span-1 justify-self-start md:justify-self-end flex items-center justify-center"
-        >
-          <BsChevronRight
-            color={isLastSlide ? "#130f2680" : "#130F26"}
-            height={15}
-            width={15}
-          />
-        </button>
       </div>
     </div>
   );

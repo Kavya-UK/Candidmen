@@ -192,6 +192,7 @@ export const productList5 = [
     price: "27890",
     isRent: true,
     rentPrice: "2789",
+    link: '/productdescription'
   },
   {
     productImg: "assets/product/product3.png",

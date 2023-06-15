@@ -20,15 +20,17 @@ import Shop from "./pages/Shop";
 import ShoppingCart from "./pages/ShoppingCart";
 import ProductListing from "./pages/ProductListing";
 import ProductDescription from "./pages/ProductDescription";
+import Routing from "./Routing";
 
 function App() {
   return (
     <div className="App">
-      <Home /> 
+      <Routing/>
+      {/* <Home /> 
        <Shop/> 
        <ProductListing />
       <ProductDescription/>
-      <ShoppingCart/>
+      <ShoppingCart/> */}
       {/* <div className="h-[450px] ">
         <HomeBanner />
       </div>
