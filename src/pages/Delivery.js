@@ -8,16 +8,21 @@ import { FiArrowLeft } from 'react-icons/fi';
 import Footer from '../components/common/Footer';
 import InputText from '../components/common/InputText';
 import InputPhone from "../components/common/InputPhone";
+import CustomButton from '../components/common/CustomButton';
+
+const stateList = ['Select your city',"Maharashtra","Karnataka","Tamil Nadu"]
+const cityList=['Select your city',"Mumbai","Bangalore","Chennai"]
+const deliveryType=["Site pickup ( 11:30 am  - 8:30 pm )","Offline-Fulltime"]
+const paymentMode=["Online Full Payment","Card Payment","UPI"]
 
 export default function Delivery() {
   return (
     <div>
-      <Header />
       <div className="grid grid-cols-10 gap-3 mt-[40px]">
         <div className="col-span-8 ml-[20px] ">
-          <div className="border-light_graycolor border-b-[1px] px-[20px] py-[20px] flex items-center justify-between">
+          <div className="border-light_graycolor border-b-[1px] py-[20px] flex items-center justify-between">
             <div className="flex items-center">
-              <Stroke1 className="inline-block text-[30px]  mt-[6px]" />
+              <Stroke1 className="inline-block text-[30px]  mt-[6px] mr-[20px]" />
               <h1 className="not-italic inline-block font-normal text-4xl leading-[44px] text-nero font-Rufina_Regular ">
                 Delivery
               </h1>
@@ -26,7 +31,7 @@ export default function Delivery() {
               3 Items
             </h3>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-10 mt-[30px]">
             <div className="col-span-1">
               <InputText
                 type="text"
@@ -38,7 +43,7 @@ export default function Delivery() {
             <div className="col-span-1">
               <InputText
                 type="text"
-                label="Last"
+                label={"\u00A0"}
                 placeholder={"Enter your Last name"}
                 name="LastName"
               />
@@ -68,35 +73,47 @@ export default function Delivery() {
               />
             </div>
             <div className="col-span-1">
-              <InputSelect
-                type="text"
-                label="City"
-                placeholder={"Select your City"}
-                name="City"
-              />
+              <InputSelect label="City" optionList={cityList} name="City" />
             </div>
             <div className="col-span-1">
-              <InputSelect
-                type="text"
-                label="State"
-                placeholder={"Select your State"}
-                name="State"
-              />
+              <InputSelect label="State" name="State" optionList={stateList} />
             </div>
             <div className="col-span-1">
               <InputText
                 type="text"
-                label="State"
-                placeholder={"Select your State"}
-                name="State"
+                label="Country"
+                name="Country"
                 disable={true}
-              />India
+                placeholder={"India"}
+              />
             </div>
             <div className="col-span-1">
-              <InputPhone />
+              <InputPhone type="number" label="Mobile number" name="Mobile" />
             </div>
-            <div className="col-span-1"></div>
-            <div className="col-span-1"></div>
+            <div className="col-span-1">
+              <InputSelect
+                label="Delivery Mode"
+                optionList={deliveryType}
+                name="delivery"
+              />
+            </div>
+            <div className="col-span-1">
+              <InputSelect
+                optionList={paymentMode}
+                label="Payment Method"
+                name="Payment"
+              />
+            </div>
+          </div>
+          <div className="flex items-center justify-center mt-[50px]">
+            <CustomButton
+              type="primary"
+              primaryBgColor="bg-shadeYellow"
+              primaryTextColor="text-white"
+              customStyle={"font-Poppins w-[30%] py-[8px]"}
+            >
+              Proceed to Payment
+            </CustomButton>
           </div>
         </div>
         <div className="col-span-2 border-light_graycolor border-l-[1px] px-[5px]">
@@ -112,17 +129,15 @@ export default function Delivery() {
           />
         </div>
       </div>
-      <div>
-        <div className="flex items-center p-[20px]">
-          <FiArrowLeft className="inline-block text-[30px] mt-[6px]" />
-          <h1 className="not-italic inline-block font-normal text-4xl leading-[44px] text-nero pl-[10px]">
+      <div className='mb-[180px]'>
+        <div className="flex items-center p-[20px] mt-[40px] ">
+          <FiArrowLeft className="inline-block text-[25px] mt-[6px]" />
+          <h1 className="not-italic inline-block font-normal text-[24px] leading-[44px] text-nero pl-[10px]">
             Continue Shopping
           </h1>
         </div>
       </div>
-      <div className="mt-[180px]">
-        <Footer />
-      </div>
+      
     </div>
   );
 }

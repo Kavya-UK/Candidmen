@@ -1,5 +1,5 @@
 import React from "react";
-import "./SaleProductSummary.css";
+import "../../styles/SaleProductSummary.css";
 import { ReactComponent as FavoriteIcon } from "../../assets/icons/favourite.svg";
 export default function SaleProductSummary({
   productImg,

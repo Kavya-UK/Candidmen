@@ -2,7 +2,7 @@ import React from "react";
 
 export default function RentalPolicy() {
   return (
-    <div className="bg-returnPolicy py-[60px] px-[30px] lg:px-[50px] xl:px-[80px]">
+    <div className="bg-returnPolicy bg-cover py-[60px] px-[30px] lg:px-[50px] xl:px-[80px]">
       <div className="grid grid-cols-12 gap-8">
         <div className="col-span-2">
           <img src={require("../../assets/home/rent.png")} alt="rent" />

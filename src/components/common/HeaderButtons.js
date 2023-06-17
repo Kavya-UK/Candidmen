@@ -1,10 +1,11 @@
 import React from 'react'
 import CustomButton from "./CustomButton";
-import { BsSearch } from "react-icons/bs";
-import { BsCart } from "react-icons/bs";
-import { BsHeart } from "react-icons/bs";
-import { BiUserCircle } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
+
+import { ReactComponent as Search } from "../../assets/icons/search.svg";
+import { ReactComponent as Cart } from "../../assets/icons/cart.svg";
+import { ReactComponent as Heart } from "../../assets/icons/Heart.svg";
+import { ReactComponent as User } from "../../assets/icons/user.svg";
 
 
 const HeaderButtons = () => {
@@ -17,7 +18,7 @@ const HeaderButtons = () => {
           fontSize={"lg:text-[24px]"}
           primaryTextColor={"text-shadeYellow"}
           type={"icon"}
-          icon={<BsSearch />}
+          icon={<Search />}
         ></CustomButton>
       </div>
       <div className="pl-[20px]">
@@ -26,7 +27,7 @@ const HeaderButtons = () => {
           primaryTextColor={"text-shadeYellow"}
           type={"icon"}
           count={3}
-          icon={<BsCart />}
+          icon={<Cart />}
           handleClick={() => navigate("/shoppingcart")}
         ></CustomButton>
       </div>
@@ -35,7 +36,7 @@ const HeaderButtons = () => {
           fontSize={"lg:text-[24px]"}
           primaryTextColor={"text-shadeYellow"}
           type={"icon"}
-          icon={<BsHeart />}
+          icon={<Heart />}
         ></CustomButton>
       </div>
       <div className="pl-[20px]">
@@ -43,7 +44,7 @@ const HeaderButtons = () => {
           fontSize={"lg:text-[30px]"}
           primaryTextColor={"text-darekBlue"}
           type={"icon"}
-          icon={<BiUserCircle />}
+          icon={<User />}
         ></CustomButton>
       </div>
     </div>

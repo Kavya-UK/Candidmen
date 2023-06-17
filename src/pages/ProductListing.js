@@ -119,9 +119,8 @@ export default function ProductListing() {
 
   return (
     <div>
-      <Header selected={"Collection"} />
       <Navigation links={["Suits & Tuxedo"]} />
-      <div className="grid grid-cols-12 gap-2 ">
+      <div className="grid grid-cols-12 gap-2 mb-[180px]">
         <div className="col-span-2 h-[100vh]">
           <Filter filterList={filterList} setFilterList={setFilterList} />
         </div>
@@ -148,10 +147,7 @@ export default function ProductListing() {
           </div>
         </div>
       </div>
-      <div></div>
-      <div className="mt-[100px]">
-        <Footer />
-      </div>
+      
     </div>
   );
 }

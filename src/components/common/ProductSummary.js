@@ -1,6 +1,6 @@
 import React from 'react'
-import './ProductSummary.css'
-import { ReactComponent as FavoriteIcon } from "../../assets/icons/favourite.svg";
+import "../../styles/ProductSummary.css";
+import { ReactComponent as FavIcon } from "../../assets/icons/FavIcon.svg";
 import { useNavigate } from "react-router-dom";
 export default function ProductSummary({
   productImg,
@@ -13,7 +13,10 @@ export default function ProductSummary({
 }) {
   const navigate = useNavigate();
   return (
-    <div className=" h-full p-[5px]" onClick={link ? ()=> navigate(link) : ()=> {}}>
+    <div
+      className=" h-full p-[5px]"
+      onClick={link ? () => navigate(link) : () => {}}
+    >
       <div className="relative h-[80%] ">
         <img
           src={require(`../../${productImg}`)}
@@ -23,8 +26,8 @@ export default function ProductSummary({
         <p className={`absolute right-0 ${discount ? "block" : "hidden"}`}>
           <aside class="ribbon3">{`${discount}% off`}</aside>
         </p>
-        <aside className="absolute right-2 bottom-2 w-[35px] h-[35px] bg-white rounded-[50%] flex justify-center items-center">
-          <FavoriteIcon />
+        <aside className="absolute -right-2 -bottom-2 flex justify-center items-center">
+          <FavIcon />
         </aside>
       </div>
       <div>

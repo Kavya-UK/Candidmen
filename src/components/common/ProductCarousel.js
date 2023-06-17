@@ -4,7 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import useWindowWidth from "../../hooks/useWindowWidth.js";
 import ProductSummary from "./ProductSummary.js";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { ReactComponent as CarouselIcon } from "../../assets/icons/carouselIcon.svg";
+import { ReactComponent as ChevronLeft } from "../../assets/icons/chevronLeft.svg";
+import { ReactComponent as ChevronRight } from "../../assets/icons/chevronRight.svg";
 import { ReactComponent as CarouselIcons } from "../../assets/icons/carouselIcon2.svg";
 
 const responsive = {
@@ -53,19 +54,19 @@ const ProductCarousel = ({
 
   const isFirstSlide = currentSlide === 0;
   const isLastSlide = currentSlide === listItems.length - noOfItemsToScroll;
-  const iconSize = isLessThanMdScreen ? 15 : 20;
+  const iconSize = isLessThanMdScreen ? 25 : 30;
   const marginTop = isShop ? "" : "mt-[20px] lg:mt-[30px] ";
   return (
     <div className={`${marginTop} flex flex-col`}>
-      <div className="w-full grid grid-cols-12 items-center px-[5px] sm:px-0 mx-auto">
+      <div className="w-full grid grid-cols-12 items-center px-[10px] xl:px-[5px] mx-auto">
         <button
           onClick={() => handleCarousel("previous")}
           className={`${
-            isShop ? "" : "col-start-2 "
-          } col-span-1  justify-self-end md:justify-self-start  flex items-center justify-center rtl:rotate-180`}
+            isShop ? "" : "xl:col-start-2  "
+          } col-span-1  justify-self-end  pr-[50px]`}
         >
           {defaultIcon ? (
-            <BsChevronLeft
+            <ChevronLeft
               color={isFirstSlide ? "#130f2680" : "#130F26"}
               height={iconSize}
               width={iconSize}
@@ -78,7 +79,9 @@ const ProductCarousel = ({
             />
           )}
         </button>
-        <div className={`${isShop ? "col-span-10" : "col-span-8"}`}>
+        <div
+          className={`${isShop ? "col-span-10" : "col-span-10 xl:col-span-8"}`}
+        >
           <Carousel
             className=" space-x-[30px] xl:space-x-[48px]"
             ref={ref}
@@ -102,10 +105,10 @@ const ProductCarousel = ({
         </div>
         <button
           onClick={() => handleCarousel("next")}
-          className="col-span-1 justify-self-start md:justify-self-end flex items-center justify-center rtl:rotate-180"
+          className="col-span-1 justify-self-start pl-[30px] "
         >
           {defaultIcon ? (
-            <BsChevronRight
+            <ChevronRight
               color={isLastSlide ? "#130f2680" : "#130F26"}
               height={iconSize}
               width={iconSize}

@@ -1,12 +1,12 @@
 import React from 'react'
 import HomeBanner from '../common/HomeBanner';
 import CustomButton from "../common/CustomButton";
-import {BsArrowRightShort} from 'react-icons/bs'
+import { ReactComponent as IconRight } from "../../assets/home/IconRight.svg";
 
 export default function HomeBannerComponent() {
   return (
     <div>
-      <div className="flex flex-col justify-center w-[100%] lg:w-[80%] px-10 lg:px-0 mx-auto">
+      <div className="flex flex-col justify-center w-[100%] lg:w-[80%] px-10 lg:px-0 mx-auto mt-[40px]">
         <div className="flex justify-center not-italic font-normal text-[30px] sm:text-[54px] lg:text-[64px] leading-[87px] text-black ">
           <h2 className="font-Prata">WEAR</h2>
         </div>
@@ -28,11 +28,11 @@ export default function HomeBannerComponent() {
           <CustomButton
             fontSize={"text-[12px] sm:text-[16px] lg:text-[20px]"}
             customStyle={
-              "not-italic font-normal  leading-[30px] text-black px-[20px] sm:px-0 py-[6px] sm:py-[8px]"
+              "not-italic font-normal leading-[30px] text-black py-[15px]"
             }
             type="primary"
             primaryTextColor={"text-black"}
-            icon={<BsArrowRightShort />}
+            icon={<IconRight />}
           >
             BROWSE NOW
           </CustomButton>

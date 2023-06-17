@@ -23,15 +23,15 @@ const InputPhone = ({
           name={name}
           type={"number"}
           disabled={disabled}
-          className={` h-[40px] sm:h-[48px] outline-none ${bgColor} ${
+          className={`  pb-[10px] pl-[6px] outline-none ${bgColor} ${
             disabled && "text-authGrey2"
           }
-               w-full ${placeholderStyle} ${borderStyle} mt-2 rounded-md pl-10  sm:pl-12`}
+               w-full ${placeholderStyle} ${borderStyle}  rounded-md pl-10  sm:pl-12`}
         />
         <div
-          className={`absolute left-1 top-[16.5px] sm:top-[21px] w-3 text-[16px] ${
+          className={`absolute left-1 top-[1px] w-3 text-[16px] ${
             disabled ? "text-authGrey2" : "text-authGrey"
-          } ltr:pl-2 rtl:pr-2`}
+          } `}
         >
           +91
         </div>

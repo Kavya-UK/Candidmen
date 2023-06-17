@@ -4,7 +4,10 @@ import { BiSearch, BiChevronDown } from "react-icons/bi";
 import {FiPhoneCall} from "react-icons/fi"
 import {MdOutlineStore} from "react-icons/md"
 import Subscribe from "../home/SubscribeLetter";
-
+import { ReactComponent as Phone } from "../../assets/icons/phone.svg";
+import { ReactComponent as Home } from "../../assets/icons/home.svg";
+import { ReactComponent as Search } from "../../assets/icons/footerSearch.svg";
+import { ReactComponent as ChevronDown } from "../../assets/icons/chevronDown.svg";
 export default function Footer() {
 
   const InformationLink=["Our Story","FAQs","About us","Contact us"]
@@ -33,36 +36,36 @@ export default function Footer() {
           </p>
           <div className="mt-[30px]">
             <span className="text-white p-[20px]">
-              <BiSearch className="inline-block" />
+              <Search className="inline-block" />
             </span>
             <span className="text-white p-[20px]">
-              <BiSearch className="inline-block" />
+              <Search className="inline-block" />
             </span>
             <span className="text-white p-[20px]">
-              <BiSearch className="inline-block" />
+              <Search className="inline-block" />
             </span>
             <span className="text-white p-[20px]">
-              <BiSearch className="inline-block" />
+              <Search className="inline-block" />
             </span>
           </div>
 
-          <div className="inline-block">
+          <div className="inline-block my-[15px]">
             <div className="h-full flex justify-center items-center px-[10px] py-[10px]">
               <span className="text-suvaGray not-italic font-normal text-base leading-6">
                 Banglore
               </span>
               <span className="">
-                <BiChevronDown className="text-[30px] text-shadeYellow" />
+                <ChevronDown className=" ml-[10px] text-[30px] text-shadeYellow" />
               </span>
 
               <span className="ml-[15px]">
-                <FiPhoneCall className="text-[20px] text-shadeYellow" />
+                <Phone className="text-[20px] text-shadeYellow" />
               </span>
               <span className="text-suvaGray not-italic font-normal text-base leading-6 ml-[6px]">
                 7676269920
               </span>
               <span className="ml-[15px]">
-                <MdOutlineStore className="text-[20px] text-shadeYellow" />
+                <Home className="text-[20px] text-shadeYellow" />
               </span>
               <span className="text-suvaGray not-italic font-normal text-base leading-6 ml-[6px]">
                 Jayanagar

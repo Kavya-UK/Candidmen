@@ -46,7 +46,6 @@ const collection = {
 export default function Home() {
   return (
     <div>
-      <Header selected={"Home"} />
 
       <HomeBannerComponent />
       <div className="mt-[120px]">
@@ -81,31 +80,27 @@ export default function Home() {
           productList={productList2}
         />
       </div>
-      <div className="mt-[50px]">
+      <div className="mt-[100px]">
         <ShowStopper />
       </div>
-      <div className="mt-[50px]">
+      <div className="mt-[120px]">
         <FeaturedBrands />
       </div>
-      <div className="mt-[50px]">
+      <div className="mt-[120px]">
         <RentalPolicy />
       </div>
-      <div className="mt-[50px]">
+      <div className="mt-[100px]">
         <h2 className=" not-italic font-bold text-4xl leading-[44px] text-black font-Rufina_Regular text-center">
           Our Happy Customers !
         </h2>
 
         <CustomerFeedbackCarousel feedbackList={feedbackList} />
       </div>
-      <div className="mt-[150px]">
-        <h2 className="not-italic font-normal text-4xl leading-[44px] text-black text-center font-Rufina_Regular">
-          About Us
-        </h2>
+      <div className="mt-[150px] mb-[120px]">
+       
         <AboutUs />
       </div>
-      <div className="mt-[80px]">
-        <Footer />
-      </div>
+      
     </div>
   );
 }

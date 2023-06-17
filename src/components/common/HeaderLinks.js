@@ -2,22 +2,23 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-export default function HeaderLinks({ selected }) {
+export default function HeaderLinks() {
+  const pathname = window.location.pathname
   const navigate=useNavigate();
   return (
     <ul className="h-full flex justify-center items-center gap-[15px] not-italic font-normal text-base leading-6 text-contentBlack">
       <li
         className={`${
-          selected === "/"
+          pathname === "/"
             ? "text-shadeYellow font-semibold underline decoration-2 underline-offset-2"
             : ""
         }`}
       >
-        <span onClick={()=>navigate("/")}>Home</span>
+        <Link to="/">Home</Link>
       </li>
       <li
         className={`${
-          selected === "Shop"
+          pathname === "/shop"
             ? "text-shadeYellow font-semibold underline decoration-2 underline-offset-2"
             : ""
         }`}
@@ -26,29 +27,32 @@ export default function HeaderLinks({ selected }) {
       </li>
       <li
         className={`${
-          selected === "Collection"
+          pathname === "/collection" ||
+          pathname === "/productlisting" ||
+          pathname === "/productdescription"
             ? "text-shadeYellow font-semibold underline decoration-2 underline-offset-2"
             : ""
         }`}
       >
-        Collection
+        <Link to="/productlisting">Collection</Link>
       </li>
       <li
         className={`${
-          selected === "Blogs"
+          pathname === "/blogs"
             ? "text-shadeYellow font-semibold underline decoration-2 underline-offset-2"
             : ""
         }`}
       >
-        Blogs
+        <Link to="/blogs">Blogs</Link>
       </li>
       <li
         className={`${
-          selected === "About"
+          pathname === "/about"
             ? "text-shadeYellow font-semibold underline decoration-2 underline-offset-2"
             : ""
         }`}
       >
+        <Link to="/about">About</Link>
         About
       </li>
     </ul>

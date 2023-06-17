@@ -1,6 +1,6 @@
 import React from "react";
 import { BsPlus, BsDash } from "react-icons/bs";
-import './Filter.css'
+import "../../styles/Filter.css";
 export default function Filter({ filterList, setFilterList }) {
     const openFilter = (item, index) => {
         const filterItems = [...filterList]

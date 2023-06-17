@@ -43,7 +43,7 @@ const CustomButton = ({
   }
   if (icon) {
     const iconPadding =
-      iconPosition === "start" ? "pr-[10px] pt-[4px] " : "pl-[10px] pt-[4px] ";
+      iconPosition === "start" ? "pr-[10px]" : "pl-[20px] ";
     iconStyle += children
       ? `${iconPadding} ${primaryTextColor} ${fontSize}`
       : `${fontSize}`;

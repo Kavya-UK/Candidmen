@@ -10,7 +10,6 @@ import Footer from '../components/common/Footer'
 export default function ShoppingCart() {
   return (
     <div>
-      <Header />
       <div className="grid grid-cols-10 gap-3 mt-[40px]">
         <div className="col-span-8 ml-[20px] ">
           <div className="border-light_graycolor border-b-[1px] px-[20px] py-[20px] flex items-center justify-between">
@@ -75,17 +74,15 @@ export default function ShoppingCart() {
           />
         </div>
       </div>
-      <div>
+      <div className='mb-[180px]'>
         <div className="flex items-center p-[20px]">
-          <FiArrowLeft className="inline-block text-[30px] mt-[6px]" />
-          <h1 className="not-italic inline-block font-normal text-4xl leading-[44px] text-nero pl-[10px]">
+          <FiArrowLeft className="inline-block text-[25px] mt-[6px]" />
+          <h1 className="not-italic inline-block font-normal text-[24px] leading-[44px] text-nero pl-[10px]">
             Continue Shopping
           </h1>
         </div>
       </div>
-      <div className='mt-[180px]'>
-        <Footer />
-      </div>
+      
     </div>
   );
 }

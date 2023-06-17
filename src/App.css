@@ -1,5 +1,6 @@
 body{
     /* padding: 20px; */
+    
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -10,4 +11,60 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 *{
   font-family: 'Poppins';
+}
+select
+{
+    color:rgba(0, 0, 0, 0.5)
+}
+option
+{
+    color: #000;
+}
+option:first-child
+{
+    color:rgba(0, 0, 0, 0.5)
+}
+
+
+
+.drop-down-container{
+  width: 140px;
+}
+.smalldesc {
+  width: 140px;
+  min-height: 35px;
+  overflow: hidden;
+  position: absolute;
+  padding: 0px;
+  transition: all .5s ease;
+}
+
+.smalldesc.expand {
+  width: 140px;
+  min-height: 80px;
+  position: absolute;
+  background-color: rgb(250, 187, 75, .1);
+  border: 1px solid rgb(250, 187, 75, .5);
+  border-radius: 8px;
+  padding: 8px;
+  transition: all .5s ease;
+}
+.select-dropdown-close{
+  position: relative;
+  top: 20px;
+}
+.select-icon-open{
+  position: absolute;
+  right: 0;
+  top: 15px;
+  rotate: -180deg;
+  transform: translate(50%, 50%);
+  transition: all .5s ease;
+}
+.select-icon-close{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .5s ease;
 }

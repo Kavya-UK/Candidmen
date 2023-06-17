@@ -50,7 +50,6 @@ const shopcollections = {
 const Shop=()=>{
     return (
       <div>
-        <Header selected={"Shop"} />
         <Banner />
         <div className="mt-[250px]">
           <h2 className="not-italic font-Rufina_Regular font-bold text-[24px] sm:text-[30px]  lg:text-[36px] leading-[44px] text-black  text-center">
@@ -89,7 +88,7 @@ const Shop=()=>{
             <ShopCollectionContainer collections={shopcollections} />
           </div>
         </div>
-        <div className="my-[50px]">
+        <div className="mt-[50px] mb-[180px]">
           <SaleDisplay
             productList={productList4}
             title="Featured Shirt Collections"
@@ -98,9 +97,7 @@ const Shop=()=>{
             imgSrc="assets/shop/sideBar2.png"
           />
         </div>
-        <div className="mt-[180px]">
-          <Footer />
-        </div>
+        
       </div>
     );
 }

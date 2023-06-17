@@ -10,7 +10,7 @@ const Label = ({
   return (
     <label
       htmlFor={labelFor}
-      className={`${labelColor} whitespace-nowrap mb-[15px] ${textSize} ${textWeight}`}
+      className={`${labelColor} whitespace-nowrap mb-[20px] inline-block ${textSize} ${textWeight}`}
     >
       {label}
     </label>
